@@ -47,7 +47,9 @@ Main areas covered:
 - integration work involving n8n, Odoo and OpenAI
 - debugging, regression testing and release validation
 
-The production repositories are private, but I am happy to discuss the architecture, workflow and the work completed during an interview.
+**Public case study:** [CIRO Business OS / CIRO Control](./CASE-STUDY-CIRO-BUSINESS-OS.md)
+
+The main source repositories are private, but the public case study summarizes the architecture, validation workflow and technical work without exposing private code or credentials.
 
 ## Technical skills
 
