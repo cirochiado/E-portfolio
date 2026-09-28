@@ -8,6 +8,15 @@ I recently completed a Technical Diploma in **Informatica e Telecomunicazioni (I
 
 **Live website:** https://webdeveloperciro.com
 
+## Start here
+
+If you are reviewing my GitHub for a role or collaboration, these pages give the fastest overview:
+
+- [Technical Evidence Map](./TECHNICAL-EVIDENCE.md) — skills linked to concrete public evidence
+- [CIRO Business OS / CIRO Control case study](./CASE-STUDY-CIRO-BUSINESS-OS.md)
+- [CIRO architecture overview](./ARCHITECTURE-CIRO-BUSINESS-OS.md)
+- [Accessibility Scanner Cloud](https://github.com/cirochiado/accessibility-scanner-cloud) — public codebase
+
 ## Selected projects
 
 ### Web Developer Ciro
@@ -23,6 +32,7 @@ Public cloud project for automated website accessibility, SEO and performance ch
 - Netlify Blobs
 - JSON, HTML and PDF reports
 - API authentication and SSRF protections
+- automated tests and validation
 
 Repository: https://github.com/cirochiado/accessibility-scanner-cloud
 
@@ -47,9 +57,13 @@ Main areas covered:
 - integration work involving n8n, Odoo and OpenAI
 - debugging, regression testing and release validation
 
-**Public case study:** [CIRO Business OS / CIRO Control](./CASE-STUDY-CIRO-BUSINESS-OS.md)
+Public documentation:
 
-The main source repositories are private, but the public case study summarizes the architecture, validation workflow and technical work without exposing private code or credentials.
+- [Case study](./CASE-STUDY-CIRO-BUSINESS-OS.md)
+- [Architecture overview](./ARCHITECTURE-CIRO-BUSINESS-OS.md)
+- [Technical evidence map](./TECHNICAL-EVIDENCE.md)
+
+The main source repositories are private, but the public documentation summarizes the architecture, validation workflow and technical work without exposing private code or credentials.
 
 ## Technical skills
 
@@ -57,14 +71,16 @@ The main source repositories are private, but the public case study summarizes t
 - WordPress / Elementor
 - Responsive web development
 - Git and GitHub
-- Netlify
-- Browser DevTools
-- Website QA and functional testing
 - Node.js / TypeScript
+- Fastify / REST APIs
 - PostgreSQL
-- Fastify
-- GitHub Actions
+- GitHub Actions / CI/CD
+- Playwright / Chromium
+- axe-core / accessibility testing
+- Netlify Functions / Blobs
 - n8n / workflow automation
+- Odoo / OpenAI integrations
+- Website QA and functional testing
 - Technical troubleshooting
 
 ## What I am looking for
