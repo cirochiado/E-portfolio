@@ -1,0 +1,49 @@
+<section class="hero" id="esperienza" aria-labelledby="hero-title">
+ <div class="hero-arc arc-one" aria-hidden="true"></div><div class="hero-arc arc-two" aria-hidden="true"></div>
+ <div class="wrap">
+  <div class="hero-meta"><p class="eyebrow"><i class="status-dot" aria-hidden="true"></i> Ciro Chiadò · Web developer</p><p class="eyebrow meta-location">Torino, Italia <span aria-hidden="true">↗</span></p></div>
+  <div class="hero-heading">
+   <h1 id="hero-title">Il web prende<br><em>forma.</em><span class="title-orbit" aria-hidden="true"><svg viewBox="0 0 160 160"><path d="M119 26a65 65 0 1 0 17 88"/><path d="M62 101 119 44M78 44h41v41"/></svg></span></h1>
+   <div class="hero-intro"><span class="eyebrow">Design da vedere. Codice da provare.</span><p>Un’identità da riconoscere.<br><strong>La tua, anche sul web.</strong></p><p class="hero-description">Progetto e sviluppo esperienze web per attività locali, professionisti e piccole imprese.</p><div class="intro-links"><a class="text-link light" href="/progetti">I miei progetti <span aria-hidden="true">↗</span></a><a class="intro-anchor" href="#laboratorio">Entra nel laboratorio <span aria-hidden="true">↓</span></a></div></div>
+  </div>
+  <div class="lab-heading"><div><span class="eyebrow">01 / Il laboratorio</span><h2 id="lab-title">Non guardarlo soltanto.<br><span>Mettilo alla prova.</span></h2></div><p>Griglia, azioni e formati.<br>Un’interfaccia da usare e osservare.</p></div>
+  <div class="lab" id="laboratorio" aria-labelledby="lab-title" data-mode="struttura">
+   <div class="lab-console">
+    <div class="lab-tabs" hidden data-tabs role="tablist" aria-label="Esplora il laboratorio" aria-orientation="vertical">
+     <button id="tab-struttura" role="tab" aria-selected="true" aria-controls="panel-struttura" tabindex="0" type="button"><span class="tab-number">01</span><span>Struttura<small>Guarda sotto la superficie</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+     <button id="tab-interazioni" role="tab" aria-selected="false" aria-controls="panel-interazioni" tabindex="-1" type="button"><span class="tab-number">02</span><span>Interazioni<small>Azioni e risposte visibili</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+     <button id="tab-responsive" role="tab" aria-selected="false" aria-controls="panel-responsive" tabindex="-1" type="button"><span class="tab-number">03</span><span>Responsive<small>Layout per schermi diversi</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+    </div>
+    <div class="console-bottom"><span class="console-cross" aria-hidden="true">✳</span><p>Un’interfaccia creata<br>per questo laboratorio.</p><span class="eyebrow">HTML / CSS / JavaScript</span></div>
+   </div>
+   <div class="lab-workspace">
+    <div class="workspace-top"><span class="workspace-label"><i aria-hidden="true"></i> Anteprima interattiva</span><span class="workspace-dimension"><output id="viewport-size">—</output> px <span aria-hidden="true">↔</span></span></div>
+    <div class="demo-scene" id="demo-scene">
+     <span class="blueprint-label blueprint-top" aria-hidden="true">&lt;header&gt;</span><span class="blueprint-label blueprint-bottom" aria-hidden="true">&lt;main&gt; · &lt;footer&gt;</span>
+     <div class="layer-ghost ghost-one" aria-hidden="true"></div><div class="layer-ghost ghost-two" aria-hidden="true"></div>
+     <div class="demo-browser" id="demo-browser" data-device="desktop" data-tone="light">
+      <div class="browser-bar"><span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>forma / studio di interfaccia</span><span aria-hidden="true">↗</span></div>
+      <div class="demo-viewport" id="demo-viewport">
+       <article class="specimen" aria-label="Interfaccia dimostrativa Forma, non un sito cliente">
+        <div class="specimen-header" data-layer="header"><span class="specimen-mark">f<span>.</span></span><span class="specimen-nav">Pensiero. Forma. Funzione.</span><span aria-hidden="true">↗</span></div>
+        <div class="specimen-body" data-layer="main">
+         <div class="specimen-copy"><span class="eyebrow">Un’idea da esplorare.</span><h3>Spazio<br>alle <em>idee.</em></h3><p>Colori, forme e interazioni<br>trovano un equilibrio.</p><button type="button" class="specimen-action" id="specimen-action" disabled>Prova il pulsante <span aria-hidden="true">↗</span></button></div>
+         <div class="specimen-art" aria-hidden="true"><div class="art-shadow"></div><div class="sculpture" id="sculpture"><img src="/static/forma-c.0dfae3b475e4.svg" width="350" height="340" alt="" decoding="async"></div><span class="art-coordinate">C / forma in movimento</span></div>
+        </div>
+        <div class="specimen-footer" data-layer="footer"><span>Un’idea diventa visibile.</span><span aria-hidden="true">01 — ∞</span></div>
+       </article>
+      </div>
+      <div class="demo-toast" id="demo-toast" aria-hidden="true" hidden><span>✓</span> Il dettaglio risponde.</div>
+     </div>
+    </div>
+    <div class="lab-controls" hidden data-lab-controls>
+     <div class="lab-panel" id="panel-struttura" role="tabpanel" aria-labelledby="tab-struttura"><div class="panel-copy"><strong>Griglia e livelli, a vista.</strong><p>Attiva la griglia o separa i livelli.</p></div><div class="panel-actions"><button type="button" class="control" id="grid-toggle" aria-pressed="false">Mostra la griglia <span aria-hidden="true">⌗</span></button><button type="button" class="control" id="layers-toggle" aria-pressed="false">Separa i livelli <span aria-hidden="true">▱</span></button></div></div>
+     <div class="lab-panel" id="panel-interazioni" role="tabpanel" aria-labelledby="tab-interazioni" hidden><div class="panel-copy"><strong>Il pulsante risponde.</strong><p id="interaction-feedback" role="status">Cambia tema e attiva il pulsante nell’anteprima.</p></div><div class="panel-actions"><button type="button" class="control" id="tone-toggle" aria-pressed="false">Tema scuro <span aria-hidden="true">◐</span></button><button type="button" class="control" id="rotate-toggle" aria-pressed="false">Ruota la forma <span aria-hidden="true">↻</span></button></div></div>
+     <div class="lab-panel" id="panel-responsive" role="tabpanel" aria-labelledby="tab-responsive" hidden><div class="panel-copy"><strong>La composizione si adatta.</strong><p>Colonne e proporzioni si riorganizzano.</p></div><div class="device-options" role="group" aria-label="Larghezza della demo"><button type="button" data-device="desktop" aria-pressed="true">Desktop</button><button type="button" data-device="tablet" aria-pressed="false">Tablet</button><button type="button" data-device="mobile" aria-pressed="false">Mobile</button></div></div>
+    </div>
+    <noscript><p class="noscript-note">L’interfaccia rimane visibile. Abilita JavaScript per esplorare griglia, livelli, colori e dimensioni.</p></noscript>
+   </div>
+  </div>
+  <div class="hero-close"><a href="#competenze">Dalle prove alle competenze. <span aria-hidden="true">↓</span></a><span class="eyebrow">Dall’idea all’ultimo pixel.</span></div>
+ </div>
+</section>

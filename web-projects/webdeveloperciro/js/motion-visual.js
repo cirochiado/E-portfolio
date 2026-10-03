@@ -8,14 +8,16 @@ const immediate=new Set(['field-focus','contact-guidance','menu-link']);
 const paced=(ms,name='')=>Math.round(ms*(immediate.has(name)?1:rhythm));
 const running=new Map(), observers=[], scheduled=new Set(), transient=new Set(), depthNodes=new Map(), events={};
 let sleeping=document.hidden, scrollFrame=0, printing=false;
-const ease='cubic-bezier(.19,1,.22,1)', inView=el=>{if(!el||!el.isConnected||!el.getClientRects().length)return false;const r=el.getBoundingClientRect();return (r.width>0||r.height>0)&&r.bottom>=0&&r.toproot.classList.contains('kb-navigation')||window.CiroKeyboard?.isKeyboard===true;
+const ease='cubic-bezier(.19,1,.22,1)', inView=el=>{if(!el||!el.isConnected||!el.getClientRects().length)return false;const r=el.getBoundingClientRect();return (r.width>0||r.height>0)&&r.bottom>=0&&r.top<innerHeight;};
+const keyboard=()=>root.classList.contains('kb-navigation')||window.CiroKeyboard?.isKeyboard===true;
 const permitted=()=>!reduce.matches&&!contrast.matches&&!sleeping&&!document.hidden&&!printing&&!keyboard();
 const record=name=>events[name]=(events[name]||0)+1;
 
 const entries=new Set(), entryOwners=new WeakMap(), naturalTransforms=new WeakMap();
 let preparing=null,prepareOffset=0,startingEntry=null,earlyIntro=null,entrancesReady=false;
 const hasPainted=()=>document.readyState==='complete'||performance.getEntriesByType?.('paint').some(e=>e.name==='first-contentful-paint');
-const boxVisible=r=>r.width>0&&r.height>0&&r.bottom>0&&r.top0&&r.left['done','skipped'].includes(g.state);
+const boxVisible=r=>r.width>0&&r.height>0&&r.bottom>0&&r.top<innerHeight&&r.right>0&&r.left<innerWidth;
+const finalEntry=g=>['done','skipped'].includes(g.state);
 const describe=el=>el?.id?'#'+el.id:el?.tagName.toLowerCase()+'.'+[...(el?.classList||[])].join('.');
 function entrySnapshot(){return [...entries].map(g=>({id:g.id,anchor:describe(g.el),state:g.state,reason:g.reason,starts:g.starts,effects:g.items.map(i=>i.name)}));}
 function entryEnded(g){
@@ -401,7 +403,7 @@ if(allowed&&fine.matches&&inView(arc)){arc.style.translate=`0 ${-Math.min(scroll
 const line=$('.evidence-line');if(line){
 const r=line.getBoundingClientRect(),progress=Math.max(0,Math.min(1,(innerHeight*.62-r.top)/Math.max(1,r.height-100)));
 line.style.setProperty('--mv-track',allowed?progress.toFixed(4):'1');
-for(const phase of $$('.phase',line)){const b=phase.getBoundingClientRect();phase.classList.toggle('mv-phase-current',b.topinnerHeight*.38);}
+for(const phase of $$('.phase',line)){const b=phase.getBoundingClientRect();phase.classList.toggle('mv-phase-current',b.top<innerHeight*.68&&b.bottom>innerHeight*.38);}
 }
 }
 function queueScroll(){if(!scrollFrame&&!sleeping&&!document.hidden)scrollFrame=requestAnimationFrame(updateScroll);}

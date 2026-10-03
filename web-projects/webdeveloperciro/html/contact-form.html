@@ -1,0 +1,87 @@
+<form action="/grazie" aria-labelledby="write-title" class="form premium-contact-form" data-netlify="true" data-netlify-recaptcha="true" method="POST" name="contatti" netlify-honeypot="bot-field">
+<input name="form-name" type="hidden" value="contatti"/>
+<p style="display:none"><label>Non compilare: <input name="bot-field"/></label></p>
+<div class="form-intro"><span class="eyebrow">01 / IL TUO MESSAGGIO</span><div class="c-form-intro"><h2 id="write-title">Il tuo messaggio.</h2><p>Nome, email e messaggio sono necessari; gli altri dati sono facoltativi. Per l’invio sono richieste anche la presa visione della privacy e la verifica antispam.</p></div></div>
+<div class="c-form-layout"><div class="c-essential"><div class="form-row">
+<div>
+<label for="nome">Nome e cognome <span aria-hidden="true">*</span></label>
+<input aria-describedby="err-nome" autocomplete="name" id="nome" maxlength="80" name="Nome" placeholder="Mario Rossi" required=""/>
+<span class="field-error" id="err-nome"></span>
+</div>
+<div>
+<label for="email">Email <span aria-hidden="true">*</span></label>
+<input aria-describedby="err-email" autocomplete="email" id="email" maxlength="120" name="Email" placeholder="email@esempio.it" required="" type="email"/>
+<span class="field-error" id="err-email"></span>
+</div>
+</div><div>
+<label for="servizio">Servizio di interesse <span>(facoltativo)</span></label>
+<select aria-describedby="servizio-helper err-servizio" id="servizio" name="Servizio di interesse">
+<option value="">Non ho ancora scelto</option>
+<option value="Creazione nuovo sito">Creazione nuovo sito</option>
+<option value="Restyling sito">Restyling sito</option>
+<option value="Sito WordPress gestibile">Sito WordPress gestibile</option>
+<option value="Audit e accessibilità">Audit e accessibilità</option>
+<option value="Altro / Non so ancora">Altro / Non so ancora</option>
+</select>
+<p class="form-helper field-helper" id="servizio-helper">Lascia vuoto se devi ancora decidere.</p>
+<span class="field-error" id="err-servizio"></span>
+</div></div><aside aria-labelledby="context-label" class="c-context"><div class="c-context-inner"><span class="eyebrow" id="context-label">PER IL TUO MESSAGGIO</span><div aria-atomic="true" aria-live="polite" class="c-context-copy"><h3 id="context-title">La tua richiesta,<br/>con parole tue.</h3><p id="context-copy">Presenta brevemente la tua attività e l’obiettivo che vorresti raggiungere.</p></div><div class="c-context-foot"><span aria-hidden="true">↘</span><p>Il suggerimento ti orienta; il messaggio resta libero.</p></div></div></aside><div class="c-message">
+<label for="messaggio">Messaggio <span aria-hidden="true">*</span></label>
+<textarea aria-describedby="messaggio-helper err-messaggio" id="messaggio" maxlength="2000" minlength="20" name="Messaggio" placeholder="Descrivi cosa vorresti creare, migliorare o verificare..." required=""></textarea>
+<p class="form-helper field-helper" id="messaggio-helper">Da 20 a 2.000 caratteri. Non inserire password o dati sensibili.</p><span aria-hidden="true" class="c-count" data-message-count="" hidden="">0 / 2.000</span>
+<span class="field-error" id="err-messaggio"></span>
+</div><fieldset class="form-optional-fields">
+<legend>Informazioni aggiuntive <span>(facoltative)</span></legend>
+<div class="form-optional-grid">
+<div class="form-row">
+<div>
+<label for="attivita">Nome attività</label>
+<input aria-describedby="err-attivita" autocomplete="organization" id="attivita" maxlength="80" name="Attivita" placeholder="Nome attività"/>
+<span class="field-error" id="err-attivita"></span>
+</div>
+<div>
+<label for="tipo">Tipo di attività</label>
+<input aria-describedby="err-tipo" id="tipo" maxlength="60" name="Tipo attivita" placeholder="Ristorante, palestra, negozio..."/>
+<span class="field-error" id="err-tipo"></span>
+</div>
+</div>
+<div class="form-row">
+<div>
+<label for="telefono">Telefono</label>
+<input aria-describedby="err-telefono" autocomplete="tel" id="telefono" inputmode="tel" maxlength="24" name="Telefono" placeholder="+39 333 1234567" type="tel"/>
+<span class="field-error" id="err-telefono"></span>
+</div>
+<div>
+<label for="hai_gia_un_sito">Hai già un sito?</label>
+<select aria-controls="sito-url-wrap" aria-describedby="sito-helper err-sito" id="hai_gia_un_sito" name="Hai gia un sito">
+<option value="">Non specificato</option>
+<option value="Si">Sì</option>
+<option value="No">No</option>
+</select>
+<p class="form-helper field-helper" id="sito-helper">Seleziona Sì per aggiungere l’indirizzo.</p>
+<span class="field-error" id="err-sito"></span>
+</div>
+</div>
+<div id="sito-url-wrap">
+<label for="sito_url">Indirizzo del sito <span>(facoltativo)</span></label>
+<input aria-describedby="sito-url-helper err-sito-url" autocapitalize="none" autocomplete="url" id="sito_url" inputmode="url" maxlength="2048" name="Indirizzo del sito" placeholder="www.esempio.it" spellcheck="false" type="text"/>
+<p class="form-helper field-helper" id="sito-url-helper">Compila solo se hai già un sito. Va bene anche un indirizzo senza https://.</p>
+<span class="field-error" id="err-sito-url"></span>
+</div>
+</div>
+</fieldset><div class="c-send"><p aria-live="polite" class="form-error" id="form-error" style="display:none" tabindex="-1"></p><div class="privacy-consent">
+<label for="privacy_read">
+<input aria-describedby="err-privacy" id="privacy_read" name="Presa visione privacy" required="" type="checkbox" value="Ho letto l'informativa privacy per la gestione della richiesta"/>
+<span>Ho letto l’<a href="/privacy-policy" rel="noopener" target="_blank">informativa privacy</a> relativa alla gestione della mia richiesta. <span aria-hidden="true">*</span></span>
+</label>
+<span class="field-error" id="err-privacy"></span>
+</div><div aria-labelledby="captcha-label" class="form-row captcha-row" id="captcha-area" role="group" tabindex="-1">
+<span class="form-control-label" id="captcha-label">Verifica antispam <span aria-hidden="true">*</span></span>
+<div data-callback="ccwebCaptchaSolved" data-error-callback="ccwebCaptchaError" data-expired-callback="ccwebCaptchaExpired" data-netlify-recaptcha="true"></div>
+<p aria-live="polite" class="form-helper" id="captcha-status" role="status">Completa la verifica antispam prima di inviare.</p>
+<p aria-live="polite" class="captcha-error" id="captcha-error" style="display:none"></p>
+<button class="btn btn-secondary captcha-retry" hidden="" id="captcha-retry" type="button">Ricontrolla la verifica</button>
+</div><p class="recaptcha-note form-helper">Il modulo è protetto da reCAPTCHA di Google tramite Netlify. Il widget può trattare dati tecnici già al caricamento della pagina. Leggi la <a href="/privacy-policy#recaptcha">Privacy Policy su reCAPTCHA</a> e la <a href="/cookie-policy#recaptcha">Cookie Policy</a>.</p><p class="form-helper">Il modulo non è disponibile? Scrivimi a <a href="mailto:info@webdeveloperciro.com">info@webdeveloperciro.com</a> oppure chiama il <a href="tel:+393807755194">380 775 5194</a>.</p><noscript>
+<style>.premium-contact-form button[type="submit"]{display:none!important}</style>
+<p class="form-helper">Per inviare dal modulo occorre JavaScript, necessario alla verifica antispam. Puoi comunque usare i contatti diretti riportati sopra.</p>
+</noscript><button class="btn btn-primary btn-glow" type="submit">Invia richiesta</button></div></div></form>

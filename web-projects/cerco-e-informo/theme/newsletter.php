@@ -14,12 +14,12 @@ function cercoeinformo_configure_mailpoet_privacy() {
         return;
     }
 
-    if (!class_exists('\MailPoet\\Settings\\SettingsController')) {
+    if (!class_exists('\\MailPoet\\Settings\\SettingsController')) {
         return;
     }
 
     try {
-        $settings = \MailPoet\\Settings\\SettingsController::getInstance();
+        $settings = \MailPoet\Settings\SettingsController::getInstance();
         $settings->set('signup_confirmation.enabled', '1');
         $settings->set('tracking.level', 'basic');
         update_option('cercoeinformo_mailpoet_privacy_done', '1', false);
@@ -89,8 +89,8 @@ add_action('mailpoet_subscription_before_subscribe', function($data, $segment_id
         return;
     }
 
-    if (class_exists('\MailPoet\\UnexpectedValueException')) {
-        throw new \MailPoet\\UnexpectedValueException('Per iscriverti devi accettare la Privacy Policy e il consenso alla newsletter.');
+    if (class_exists('\\MailPoet\\UnexpectedValueException')) {
+        throw new \MailPoet\UnexpectedValueException('Per iscriverti devi accettare la Privacy Policy e il consenso alla newsletter.');
     }
 }, 10, 3);
 
