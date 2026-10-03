@@ -1,0 +1,132 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'sha256-neEi5AYGzJd0J+sahBrZpNX12JbU06cP2H8BheEKgl0=' 'sha256-URkBvbDDEhQBTde/0zvuM6kWMqdPimZaQz4+0+wHB1k=' 'sha256-tDCTam/T23XivBWeTmWAXQ0AipMmNugCGuXgDEIopDU=' 'sha256-0Hv8h0w1HwvJ1LZvULnN+oz+tXAg9MlH+alA6cUFlhU=' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.gstatic.com/recaptcha/; font-src 'self'; frame-src https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; connect-src 'self' https://www.google.com/recaptcha/
+
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/404.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/contatti
+  Cache-Control: public, max-age=0, must-revalidate
+
+/contatti.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/contatti/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/cookie-policy
+  Cache-Control: public, max-age=0, must-revalidate
+
+/cookie-policy.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/cookie-policy/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/favicon.ico
+  Cache-Control: public, max-age=0, must-revalidate
+
+/grazie
+  Cache-Control: public, max-age=0, must-revalidate
+
+/grazie.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/grazie/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/metodo
+  Cache-Control: public, max-age=0, must-revalidate
+
+/metodo.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/metodo/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/note-legali
+  Cache-Control: public, max-age=0, must-revalidate
+
+/note-legali.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/note-legali/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/privacy-policy
+  Cache-Control: public, max-age=0, must-revalidate
+
+/privacy-policy.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/privacy-policy/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/progetti
+  Cache-Control: public, max-age=0, must-revalidate
+
+/progetti.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/progetti/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/progetto-autolavaggio-tiziano
+  Cache-Control: public, max-age=0, must-revalidate
+
+/progetto-autolavaggio-tiziano.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/progetto-autolavaggio-tiziano/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/progetto-cerco-e-informo
+  Cache-Control: public, max-age=0, must-revalidate
+
+/progetto-cerco-e-informo.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/progetto-cerco-e-informo/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/robots.txt
+  Cache-Control: public, max-age=0, must-revalidate
+
+/servizi
+  Cache-Control: public, max-age=0, must-revalidate
+
+/servizi.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/servizi/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=0, must-revalidate
+
+/grazie
+  X-Robots-Tag: noindex, follow
+
+/grazie/
+  X-Robots-Tag: noindex, follow
+
+/grazie.html
+  X-Robots-Tag: noindex, follow
+
+/404.html
+  X-Robots-Tag: noindex, follow

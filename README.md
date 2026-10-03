@@ -1,64 +1,30 @@
-# Technical Portfolio & Case Studies
+# Project Portfolio
 
-This repository is the **technical evidence hub** behind my GitHub profile and CV.
+Selected code and project notes from my web development, software and QA work.
 
-It is intentionally focused on verifiable project evidence: architecture notes, case studies, implementation references and links to public code.
+## Web development
 
-## Start here
+| Project | Main areas | Links |
+| --- | --- | --- |
+| **WebDeveloperCiro** | HTML, CSS, JavaScript, responsive UI, accessibility, Netlify | [Source](./web-projects/webdeveloperciro) · [Live](https://webdeveloperciro.com) |
+| **Autolavaggio Tiziano** | WordPress, CSS, JavaScript, PHP, forms, validation | [Source](./web-projects/autolavaggio-tiziano) · [Live](https://www.autolavaggiotiziano.it) |
+| **Cerco e Informo** | WordPress, PHP, CSS, JavaScript, forms, SEO | [Source](./web-projects/cerco-e-informo) · [Live](https://cercoeinformo.it) |
 
-| Evidence | What it shows |
-| --- | --- |
-| [Technical Evidence Map](./TECHNICAL-EVIDENCE.md) | Connects CV skills to concrete project evidence |
-| [CIRO Business OS / CIRO Control Case Study](./CASE-STUDY-CIRO-BUSINESS-OS.md) | Backend, database, automation, testing and delivery work |
-| [CIRO Architecture Overview](./ARCHITECTURE-CIRO-BUSINESS-OS.md) | System structure, components and technical boundaries |
-| [Accessibility Scanner Cloud](https://github.com/cirochiado/accessibility-scanner-cloud) | Public implementation for accessibility, SEO and performance scanning |
+[Browse all web projects](./web-projects)
 
-## Featured engineering work
+## Software & QA
 
-### Accessibility Scanner Cloud
+### [Accessibility Scanner Cloud](https://github.com/cirochiado/accessibility-scanner-cloud)
 
-Public serverless website-analysis project built around:
+Serverless website-analysis project using Node.js, Playwright, Chromium and axe-core for accessibility, technical SEO and performance checks.
 
-- Node.js / JavaScript
-- Playwright / Chromium
-- axe-core
-- Netlify Functions / Background Functions / Blobs
-- accessibility, technical SEO and performance analysis
-- API authentication and SSRF protections
-- automated tests and structured reporting
+### [CIRO Business OS / CIRO Control](./software-projects/ciro-business-os)
 
-**Public code:**  
-https://github.com/cirochiado/accessibility-scanner-cloud
+Private backend and automation project covering TypeScript, Fastify, PostgreSQL, worker orchestration, CI/CD and controlled integrations.
 
-### CIRO Business OS / CIRO Control
+[Browse software projects](./software-projects)
 
-Private engineering project documented publicly without exposing credentials, internal code or private data.
+## Profile
 
-The public evidence covers:
-
-- TypeScript / Node.js and Fastify APIs
-- PostgreSQL 17, schema migrations, roles and privilege validation
-- GitHub Actions / CI-CD
-- automated regression and release-validation gates
-- branch and pull-request workflows
-- n8n, Odoo and OpenAI integrations
-- debugging and fail-closed validation
-
-**Evidence:**
-- [Case Study](./CASE-STUDY-CIRO-BUSINESS-OS.md)
-- [Architecture Overview](./ARCHITECTURE-CIRO-BUSINESS-OS.md)
-- [Technical Evidence Map](./TECHNICAL-EVIDENCE.md)
-
-## Web work
-
-Selected web projects and case studies are presented on my main portfolio:
-
-**https://webdeveloperciro.com**
-
-This includes responsive web development, WordPress / Elementor work, usability improvements, forms and user-flow testing.
-
-## Main links
-
-- **GitHub profile:** https://github.com/cirochiado
-- **Web portfolio:** https://webdeveloperciro.com
-- **Accessibility Scanner Cloud:** https://github.com/cirochiado/accessibility-scanner-cloud
+- [GitHub profile](https://github.com/cirochiado)
+- [Web portfolio](https://webdeveloperciro.com)
